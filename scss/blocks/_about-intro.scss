@@ -1,0 +1,25 @@
+.about-intro {
+    margin-top: 45px;
+}
+
+.about-intro__container {
+    display: block;
+    width: 1280px;
+    min-height: 450px;
+    background: url(../../img/about-intro.jpg);
+    border-radius: 18px;
+}
+
+.intro__caption {
+    width: 445px;
+    padding: 137px 0 137px 85px;
+}
+
+.intro__caption-title {
+    @include fraunces (bold, 40px, 48px, #FEFCF7);
+    margin-bottom: 24px;
+}
+
+.intro__caption-description {
+    @include barlow (normal, 16px, 26px, #FEFCF7)
+}

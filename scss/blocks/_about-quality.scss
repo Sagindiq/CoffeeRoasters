@@ -1,0 +1,32 @@
+.quality__container {
+    background-color: $accent;
+    display: flex;
+    border-radius: 16px;
+    margin-top: 240px;
+    position: relative;
+
+    &::after {
+        display: block;
+        width: 445px;
+        height: 474px;
+        background: url(../img/quality.png);
+        content: '';
+        position: absolute;
+        right: 85px;
+        bottom: 88px;
+    }
+}
+
+.quality__caption {
+    width: 540px;
+    margin: 96px 0 183px 85px;
+}
+
+.quality__caption-title {
+    @include fraunces(900, 40px, 48px, #FEFCF7);
+    margin-bottom: 32px;
+}
+
+.quality__caption-description {
+    @include barlow(normal, 16px, 26px, #fefcf7cc);
+}

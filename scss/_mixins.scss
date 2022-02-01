@@ -1,0 +1,32 @@
+@mixin collection-img {
+    display: inline-block;
+    width: 255px;
+    height: 193px;
+    content: '';
+}
+
+@mixin benefits-img {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    margin:72px 143px 56px 136px;
+    content: '';
+}
+
+@mixin fraunces($fw, $fz, $lh, $color) {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin barlow($fw, $fz, $lh, $color) {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}

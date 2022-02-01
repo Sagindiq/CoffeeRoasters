@@ -1,0 +1,18 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 44px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__list-item {
+    margin-left: 33px;
+
+    & :last-child {
+        margin-left: 0;
+    }
+}

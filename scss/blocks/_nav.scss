@@ -1,0 +1,13 @@
+.nav-item a {
+    font-family: 'Barlow' , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+
+.nav-item--active {
+    border-bottom: 2.4px solid #83888F;
+}
