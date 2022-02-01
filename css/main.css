@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Barlow';
-  src: url("Barlow-Bold.woff2") format("woff2"), url("Barlow-Bold.woff") format("woff");
+  src: url("../fonts/fontsBarlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Fraunces';
-  src: url("Fraunces-9ptBlackItalic.woff2") format("woff2"), url("Fraunces-9ptBlackItalic.woff") format("woff");
+  src: url("../fonts/fontsFraunces-9ptBlackItalic.woff2") format("woff2"), url("../fontsFraunces-9ptBlackItalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Fraunces';
-  src: url("../Fraunces-9ptBlack.woff2") format("../woff2"), url("../Fraunces-9ptBlack.woff") format("../woff");
+  src: url("../fonts/Fraunces-9ptBlack.woff2") format("woff2"), url("../fonts/Fraunces-9ptBlack.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Barlow';
-  src: url("Barlow-Regular.woff2") format("woff2"), url("Barlow-Regular.woff") format("woff");
+  src: url("../fonts/fontsBarlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Fraunces';
-  src: url("..Fraunces-ExtraBold.woff2") format("woff2"), url("..Fraunces-ExtraBold.woff") format("woff");
+  src: url("../fonts/Fraunces-ExtraBold.woff2") format("woff2"), url("../fonts/Fraunces-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -219,7 +219,7 @@ footer {
   top: 34px;
   font-family: 'Fraunces', serif;
   font-weight: 900;
-  font-size: 180px;
+  font-size: 150px;
   line-height: 142px;
   text-align: center;
   -webkit-background-clip: text;
