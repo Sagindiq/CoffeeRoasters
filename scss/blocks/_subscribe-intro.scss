@@ -1,13 +1,11 @@
-.about-intro {
+.subscribe-intro {
     margin-top: 45px;
 }
 
-.about-intro__container {
-    display: block;
+.subscribe-intro__container {
     width: 1280px;
-    min-height: 450px;
-    background: url(../img/about-intro.jpg);
-    border-radius: 18px;
+    height: 450px;
+    background-image: url(../img/subscribe-intro.png);
 }
 
 .intro__caption {

@@ -1,0 +1,68 @@
+.order-step {
+    margin-top: 151px;
+    background-color: $accent;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    margin-bottom: 168px;
+}
+
+.order-step__title {
+    font-family: 'Fraunces 9pt', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    margin-bottom: 80px;
+}
+
+.order-step__circles-list {
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    // position: relative;
+}
+
+.order-step__circle-item {
+    display: flex;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #0E8784;
+    border-radius: 50%;
+    background: #FEFCF7;
+}
+
+.circle__horizontal-line {
+    // position: absolute;
+    display: block;
+    border: 1px solid #FDD6BA;
+    width: 770px;
+    margin-bottom: 67px;
+    margin-top: -20px;
+}
+
+
+.order-step__list {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.order-step__list-item {
+    width: 285px;
+}
+
+.order-step__item-number {
+    @include fraunces(900, 72px, 72px, #FDD6BA);
+}
+
+.order-step__item-title {
+    width: 255px;
+    @include fraunces(900, 32px, 36px, #FEFCF7);
+    margin-top: 38px;
+    margin-bottom: 42px;
+}
+
+.order-step__item-description {
+    @include barlow(normal, 16px, 26px, #FEFCF7);
+}

@@ -1,0 +1,49 @@
+.offices__title {
+    @include fraunces(900, 24px, 32px, #83888F);
+    margin-bottom: 72px;
+}
+
+.offices__list {
+    display: flex;
+    // width: 1045px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offices__list-item::before {
+    margin-bottom: 45px;
+}
+
+.item--UK::before {
+    display: inline-block;
+    width: 41px;
+    height: 49px;
+    background: url(../img/uk.svg);
+    content: '';
+}
+
+.item--CA::before {
+    display: inline-block;
+    width: 51.5px;
+    height: 50px;
+    background: url(../../img/ca.svg);
+    content: '';
+}
+
+.item--AU::before {
+    display: inline-block;
+    width: 49px;
+    height: 44px;
+    background: url(../img/au.svg);
+    content: '';
+    margin-bottom: 48px;
+}
+
+.country-title {
+    @include fraunces(900, 32px, 36px, #333D4B);
+    margin-bottom: 24px;
+}
+
+.office__address {
+    @include barlow(400, 16px, 26px, #333D4Bcc);
+}

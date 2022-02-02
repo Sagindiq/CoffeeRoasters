@@ -1,0 +1,210 @@
+.forms {
+    display: flex;
+    justify-content: center;
+}
+
+.forms__in-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms__buttons {
+    margin-right: 125px;
+}
+
+.forms__button {
+    width: 255px;
+    display: block;
+    font-family: 'Fraunces' , serif;
+    color: #83888F;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid #83888F;
+}
+
+.forms__button:first-child {
+    padding-top: 0;
+}
+
+.forms__button:first-child span {
+    color:#0E8784;
+}
+
+.forms__button:last-child {
+    color: #333D4B;
+}
+
+.forms__button:last-child span {
+    color:#83888F;
+}
+
+.forms__button:hover {
+    color:#333D4B;
+}
+
+.forms__button span:active {
+    color:#0E8784;
+}
+
+.button__number {
+    margin-right: 25px;
+}
+
+.forms__title-button {
+    display: flex;
+    align-items: center;
+}
+
+.forms__title-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms__title-button::after {
+    width: 18.19px;
+    height: 11.92px;
+    display: inline-block;
+    background-image: url(../img/up.svg);
+    content: '';
+}
+
+.CoffeeForm__title {
+    font-family: 'Fraunces' , serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color:#83888F;
+    border:none;
+    background:none;
+}
+
+.CoffeeForm__labels {
+    margin-top: 56px;
+    display: flex;
+    margin-bottom: 88px;
+}
+
+.CoffeeForm__label {
+    margin-right: 23px;
+}
+
+.CoffeeForm__label:nth-child(3n) {
+    margin-right: 0;
+}
+
+.radio-styled {
+    width: 228px;
+    height: 250px;
+    background: #F4F1EB;
+    border-radius: 8px;
+    padding-left: 28px;
+}
+
+.radio-styled__description {
+    width: 172px;
+    font-family: 'Barlow' , sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color:#83888F;
+}
+
+.radio-styled--active {
+    background: #0E8784;
+    color:#fff;
+}
+
+.radio-styled--active .radio-styled__description {
+    color:#fff;
+}
+
+.CoffeeForm__radio:checked + .radio-styled {
+    background: #0E8784;
+    color:#fff;
+}
+
+.CoffeeForm__radio:checked + .radio-styled p {
+    color:#fff;
+}
+
+.cof .CoffeForm__radio:checked + .radio-styled {
+    background:#0E8784;
+    color:#fff;
+}
+
+.radio-styled__title  {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.hidden-radios {
+    margin-top: 68px;
+    margin-bottom: 84px;
+}
+
+.hidden-radios__shower {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 88px;
+
+    &::after {
+        display: inline-block;
+        width: 18.19px;
+        height: 11.92px;
+        background: url(../img/down.svg);
+        content: '';
+
+        &:last-child {
+        margin-bottom: 0;
+    }
+
+    }
+}
+
+.shower__btn-title {
+    @include fraunces(900, 40px, 48px, #83888F);
+}
+
+.order-summary {
+    background-color: $accent;
+    border-radius: 8px;
+}
+
+.order-summary small {
+    text-transform: uppercase;
+    display: block;
+    @include barlow(400, 16px, 26px, #ffffff80);
+    padding:48px 0 8px 64px;
+}
+
+.order-summary p {
+    display: block;
+    width: 600px;
+    padding:0 0 47px 64px;
+    @include fraunces(900, 24px, 40px, #fff);
+}
+
+.order-summary p span {
+    color: rgb(23, 82, 57);
+}
+
+.subscribe-btn {
+    // margin: 40px 0 0 auto;
+    margin-top: 40px;
+    margin-left: 523px;
+}
+
+.btn--lightly {
+    color: #FEFCF7;
+    background-color: #E2DEDB;
+}
