@@ -15,16 +15,10 @@
     margin:0 auto;
 }
 
-.footer {
-    width: 1280px;
-    margin:0 auto 88px auto;
-}
-
 .footer__container {
-    width: 1111px;
- 
- 
-    margin: 0 auto;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // about.html 
@@ -38,4 +32,14 @@
 .offices__container {
     width: 1045px;
     margin: 168px auto 167px auto;
+}
+
+.order-step {
+    width: 1280px;
+    margin:0 auto;
+}
+
+.order-step__container {
+    width: 1045px;
+    margin:0 auto;
 }

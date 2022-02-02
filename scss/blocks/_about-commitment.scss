@@ -1,0 +1,30 @@
+.commitment{
+    margin-top: 168px;
+}
+
+.commitment__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+        display: inline-block;
+        width: 445px;
+        height: 520px;
+        background-image: url(../img/about-commitent.png);
+        content: '';
+    }
+}
+
+.commitment__caption {
+    width: 540px;
+}
+
+.commitment__caption-title {
+    @include fraunces(900, 40px, 48px,#333D4B);
+    margin-bottom: 32px;
+}
+
+.commitment__caption-description {
+    @include barlow(normal, 16px, 26px, #333d4bcc);
+}
