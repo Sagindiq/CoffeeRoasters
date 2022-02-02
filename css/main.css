@@ -71,7 +71,6 @@ li {
 }
 
 footer {
-  background: #2C343E;
   margin-top: 200px;
 }
 
@@ -534,6 +533,11 @@ footer {
 
 .footer {
   margin-top: 200px;
+  margin-bottom: 88px;
+}
+
+.footer__container {
+  background-color: #2C343E;
 }
 
 .footer__nav {
