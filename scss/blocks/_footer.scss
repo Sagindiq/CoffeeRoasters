@@ -23,7 +23,7 @@
 
 .footer__list {
     display: flex;
-    width: 280px;
+    min-width: 280px;
     justify-content: space-between;
     margin-right: 369px;
 }
@@ -36,6 +36,19 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #83888F;
+}
+
+.footer--active {
+    border-bottom: 2.2px solid #83888F;
+    border-top: 2.2px solid #83888F;
+}
+
+.subscribe-item {
+    margin-right: 25px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .footer__social-list {

@@ -158,6 +158,7 @@ footer {
 
 .nav-item--active {
   border-bottom: 2.2px solid #83888F;
+  border-top: 2.2px solid #83888F;
 }
 
 .intro {
@@ -562,7 +563,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 280px;
+  min-width: 280px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -577,6 +578,19 @@ footer {
   line-height: 15px;
   text-transform: uppercase;
   color: #83888F;
+}
+
+.footer--active {
+  border-bottom: 2.2px solid #83888F;
+  border-top: 2.2px solid #83888F;
+}
+
+.subscribe-item {
+  margin-right: 25px;
+}
+
+.subscribe-item:last-child {
+  margin-right: 0;
 }
 
 .footer__social-list {
