@@ -97,6 +97,15 @@
     color: #333D4B;
 }
 
+@media only screen and (max-width:1024px) {
+    .collection__container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border:1px solid green;
+    }
+}
+
 @media only screen and (max-width:768px) {
     .collection__container-center {
         width: 686px;

@@ -99,7 +99,7 @@ footer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid blue;
+    border: 1px solid red;
   }
 }
 
@@ -108,7 +108,7 @@ footer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
+    border: 1px solid green;
   }
 }
 
@@ -414,6 +414,15 @@ footer {
   line-height: 26px;
   text-align: center;
   color: #333D4B;
+}
+
+@media only screen and (max-width: 1024px) {
+  .collection__container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid green;
+  }
 }
 
 @media only screen and (max-width: 768px) {
