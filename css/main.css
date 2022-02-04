@@ -423,7 +423,7 @@ footer {
   .collection-background-text {
     position: absolute;
     z-index: -1;
-    left: 18px;
+    left: 90px;
     top: 84px;
     font-family: 'Fraunces', serif;
     font-weight: 900;
