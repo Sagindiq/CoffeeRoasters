@@ -70,7 +70,7 @@
 
 
 
-.footer__social-item:first-child::before{
+.facebook-icon{
     display: block;
     width: 24px;
     height: 24px;
@@ -80,17 +80,17 @@
 }
 
 
-.footer__social-item:first-child:hover::before {
-    border: 1px solid red;
-    display: inline-block;
+.facebook-icon:hover {
+    display:block;
     width: 24px;
     height: 24px;
     background: url(../img/facebook-hover.svg);
     background-repeat: no-repeat;
+    transition: 1.5s;
     content: '';
 }
 
-.footer__social-item:nth-child(2):before{
+.twitter-icon{
     display: block;
     width: 24px;
     height: 24px;
@@ -100,17 +100,17 @@
 }
 
 
-.footer__social-item:nth-child(2):hover::before {
-    border: 1px solid red;
-    display: inline-block;
+.twitter-icon:hover {
+    display:block;
     width: 24px;
     height: 24px;
     background: url(../img/twitter-hover.svg);
     background-repeat: no-repeat;
     content: '';
+
 }
 
-.footer__social-item:nth-child(3):before{
+.instagram-icon{
     display: block;
     width: 24px;
     height: 24px;
@@ -120,13 +120,14 @@
 }
 
 
-.footer__social-item:nth-child(3):hover::before {
-    display: inline-block;
+.instagram-icon:hover {
+    display: block;
     width: 24px;
     height: 24px;
     background: url(../img/instagram-hover.svg);
     background-repeat: no-repeat;
     content: '';
-
-    &
 }
+
+
+
