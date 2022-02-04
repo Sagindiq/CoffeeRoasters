@@ -10,6 +10,43 @@
     margin-right: auto;
 }
 
+@media only screen and (max-width: 1290px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border:1px solid blue;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border:1px solid red;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        width: 689px;
+        margin-left: auto;
+        margin-right: auto;
+        border:1px solid rgb(0, 153, 255);
+    }
+}
+
+// @media only screen and (max-width:375px) {
+//     .container {
+//         width: 327px;
+//         margin-left:auto;
+//         margin-right: auto;
+//         border: 1px solid green;
+//     }
+// }
+
 // about.html 
 
 .commitment__container {
