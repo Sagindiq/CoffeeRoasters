@@ -3,6 +3,11 @@
 }
 
 .collection__container {
+    display: flex;
+    justify-content: center;
+}
+
+.collection__container-center {
     position: relative;
 }
 
