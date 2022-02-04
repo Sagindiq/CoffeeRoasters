@@ -98,12 +98,44 @@
 }
 
 @media only screen and (max-width:1024px) {
+
     .collection__container {
+        position: relative;
+    }
+
+    .collection-background-text {
+        position: absolute;
+    // color: #f1f0ec;
+    z-index: -1;
+    left:18px;
+    top: 84px;
+
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 72px;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #83888F;
+    background-image:linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    }
+
+    .collection__list {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        border:1px solid green;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
+
+    .planalto-item,
+    .danche-item {
+        padding-top:20px;
+    }
+
+
 }
 
 @media only screen and (max-width:768px) {
