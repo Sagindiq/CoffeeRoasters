@@ -53,6 +53,12 @@ li {
   list-style: none;
 }
 
+<<<<<<< HEAD
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+=======
 *::before {
   padding: 0;
   margin: 0;
@@ -65,6 +71,7 @@ li {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
 }
 
 .visually-hidden {
@@ -79,10 +86,15 @@ li {
 }
 
 footer {
+<<<<<<< HEAD
+  background: #2C343E;
+=======
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
   margin-top: 200px;
 }
 
 .container {
+<<<<<<< HEAD
   max-width: 1310px;
   margin-left: auto;
   margin-right: auto;
@@ -93,6 +105,61 @@ footer {
   max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
+=======
+  width: 1280px;
+<<<<<<< HEAD
+  margin: 0 auto;
+}
+
+.collection__container {
+  width: 1111px;
+  margin: 0 auto;
+}
+
+.workstep__container {
+  width: 1111px;
+  margin: 0 auto;
+=======
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
+}
+
+.footer__container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+<<<<<<< HEAD
+=======
+}
+
+@media only screen and (max-width: 1290px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /*  border:1px solid red; */
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border:1px solid green; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 689px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border:1px solid rgb(0, 153, 255); */
+  }
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
+>>>>>>> 4319bc05de2a9170090ca38d5ad4248315f12970
 }
 
 .commitment__container {
@@ -284,6 +351,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 375px) {
   .header__container {
     width: 326px;
@@ -300,6 +368,29 @@ footer {
     min-width: 162px;
     height: 17px;
   }
+=======
+.nav-item a {
+  font-family: 'Barlow' , sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+
+<<<<<<< HEAD
+.nav-item--active {
+  border-bottom: 2.2px solid #83888F;
+=======
+.nav-item--active a {
+  color: #333D4B;
+}
+
+.nav-item a:hover {
+  color: #333D4B;
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
+>>>>>>> 4319bc05de2a9170090ca38d5ad4248315f12970
 }
 
 .intro {
