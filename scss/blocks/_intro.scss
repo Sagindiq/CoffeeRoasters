@@ -3,7 +3,7 @@
 }
 
 .intro__container {
-    background-image: url(../img/intro-background.png);
+    background-image: url(../img/intro-bg.jpg);
     background-color: black;
     height: 600px;
     position: relative;
@@ -25,10 +25,10 @@
     font-size: 72px;
     line-height: 72px;
     color: #FEFCF7;
+    margin-bottom: 32px;
 }
 
 .intro__content-description {
-    margin-top: 32px;
     margin-bottom: 56px;
     font-family: 'Barlow', sans-serif;
     font-style: normal;
@@ -39,29 +39,74 @@
     opacity: 0.8;
 }
 
-@media only screen and (max-width: 1024px) {
-    .intro__container {
-        width: 90%;
+@media only screen and (max-width: $tablet) {
+    .intro {
+        max-width: 99%;
+        margin: 0 auto;
     }
-}
 
-@media only screen and (max-width:768px) {
-    .intro__container {
-        width: 689px;
-        height: 500px;
-        background: url(../img/intro-bg-tablet.jpg);
-    }
     .intro__content {
-        width: 398px;
-        margin-left: -27px;
+        width: 50.63%
     }
 
     .intro__content-title {
-        @include fraunces (900, 48px, 48px, #FEFCF7);
+        @include fraunces(900, 58px, 58px, #FEFCF7);
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .intro {
+        max-width: 689px;
+        margin: 0 auto;
+        padding:0 15px;
+    }
+
+    .intro__container {
+        background: url(../../img/intro-bg-tablet.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .intro__content {
+        width: 329px;
+    }
+
+    .intro__content-title {
+        @include fraunces(900, 48px, 48px, #FEFCF7);
     }
 
     .intro__content-description {
-        @include barlow (400, 15px, 25px, #FEFCF7);
+        @include barlow(400, 15px, 25px, #FEFCF7);
+    }
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .intro {
+        display: block;
+        min-width: 327px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+    .intro__container {
+        background: url(../img/intro-bg-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .intro__content {
+        width:279px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro__content-title {
+        @include fraunces(900, 40px, 40px, $light-color);
+    }
+
+    .intro__content-description {
+        @include barlow (400, 15px, 25px, $light-color);
         opacity: 0.8;
     }
 }
