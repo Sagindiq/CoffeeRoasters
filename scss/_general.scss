@@ -12,10 +12,23 @@ li {
     list-style: none;
 }
 
+<<<<<<< HEAD
 *::after,
 *::before {
     margin:0;
     padding: 0;
+=======
+*::before {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
 }
 
 .visually-hidden {
@@ -29,6 +42,9 @@ li {
 }
 
 footer {
+<<<<<<< HEAD
     background: $accent;
+=======
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
     margin-top: 200px;
 }

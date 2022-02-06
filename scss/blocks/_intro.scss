@@ -39,3 +39,29 @@
     opacity: 0.8;
 }
 
+@media only screen and (max-width: 1024px) {
+    .intro__container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .intro__container {
+        width: 689px;
+        height: 500px;
+        background: url(../img/intro-bg-tablet.jpg);
+    }
+    .intro__content {
+        width: 398px;
+        margin-left: -27px;
+    }
+
+    .intro__content-title {
+        @include fraunces (900, 48px, 48px, #FEFCF7);
+    }
+
+    .intro__content-description {
+        @include barlow (400, 15px, 25px, #FEFCF7);
+        opacity: 0.8;
+    }
+}

@@ -1,5 +1,6 @@
 .container {
     width: 1280px;
+<<<<<<< HEAD
     margin: 0 auto;
 }
 
@@ -13,6 +14,10 @@
     // margin-left: 165px;
     // margin-right: 230px;
     margin:0 auto;
+=======
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> bf94dd5511fca334bc26799b4bf0803c6283b286
 }
 
 .footer__container {
@@ -20,6 +25,43 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media only screen and (max-width: 1290px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      /*  border:1px solid red; */
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+       /* border:1px solid green; */
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        width: 689px;
+        margin-left: auto;
+        margin-right: auto;
+       /* border:1px solid rgb(0, 153, 255); */
+    }
+}
+
+// @media only screen and (max-width:375px) {
+//     .container {
+//         width: 327px;
+//         margin-left:auto;
+//         margin-right: auto;
+//         border: 1px solid green;
+//     }
+// }
 
 // about.html 
 
