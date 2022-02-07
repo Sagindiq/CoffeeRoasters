@@ -241,7 +241,7 @@ footer {
 
 @media only screen and (max-width: 1310px) {
   .header__container {
-    width: 99%;
+    width: 100%;
     margin: 44px auto 54px auto;
     padding: 0 15px;
   }
@@ -249,7 +249,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .header__container {
-    max-width: 689px;
+    max-width: 768px;
     padding: 0 15px;
   }
   .header__burger {
@@ -382,18 +382,22 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1310px) and (min-width: 768px) {
   .intro {
-    max-width: 689px;
+    min-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
   }
   .intro__container {
-    background: url(../../img/intro-bg-tablet.jpg);
+    background: url(../img/intro-bg-tablet.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .intro__content {
-    width: 329px;
+    max-width: 40.63%;
+  }
+  .intro__content {
+    min-width: 398px;
   }
   .intro__content-title {
     font-family: 'Fraunces', serif;
@@ -402,14 +406,61 @@ footer {
     font-size: 48px;
     line-height: 48px;
     color: #FEFCF7;
+    margin-bottom: 24px;
   }
-  .intro__content-description {
+  .intro__content-desccription {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
     color: #FEFCF7;
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 327px) {
+  .intro {
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .intro__container {
+    background: url(../img/intro-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .intro__content {
+    position: absolute;
+    min-width: 279px;
+    margin: 0 auto;
+    top: 100px;
+    left: 24px;
+    right: 24px;
+  }
+  .intro__content .intro__content-title {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FEFCF7;
+    text-align: center;
+  }
+  .intro__content .intro__content-description {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FEFCF7;
+    opacity: 0.8;
+  }
+  .intro__content .intro__button {
+    display: block;
+    width: 217px;
+    margin: 0 auto;
   }
 }
 

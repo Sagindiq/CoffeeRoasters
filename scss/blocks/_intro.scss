@@ -54,27 +54,83 @@
     }
 }
 
-@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: $tablet) and (min-width: $mobile) {
     .intro {
-        max-width: 689px;
+        min-width: $mobile;
         margin: 0 auto;
         padding:0 15px;
     }
 
     .intro__container {
-        background: url(../../img/intro-bg-tablet.jpg);
+        background: url(../img/intro-bg-tablet.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .intro__content {
-        width: 329px;
+        max-width: 40.63%;
     }
 
-    .intro__content-title {
-        @include fraunces(900, 48px, 48px, #FEFCF7);
+    .intro__content {
+        min-width: 398px;
+
+        &-title {
+            @include fraunces (900, 48px, 48px, $light-color);
+            margin-bottom: 24px;
+        }
+
+        &-desccription {
+            @include barlow(400, 15px, 25px, $light-color);
+            opacity: 0.8;
+        }
     }
 
-    .intro__content-description {
-        @include barlow(400, 15px, 25px, #FEFCF7);
+    // .intro__content-title {
+    //     @include fraunces(900, 60px, 60px, #FEFCF7);
+    // }
+
+    // .intro__content-description {
+    //     @include barlow(400, 15px, 25px, #FEFCF7);
+    // }
+
+}
+
+@media only screen and (max-width: $mobile) and (min-width: 327px) {
+    .intro {
+        min-width: 375px;
+        margin: 0 auto;
+        padding:0 15px;
+    }
+
+    .intro__container {
+        background: url(../img/intro-bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .intro__content {
+        position:absolute;
+        min-width:279px;
+        margin:0 auto;
+        top: 100px;
+        left:24px;
+        right:24px;
+
+        & .intro__content-title {
+            @include fraunces(900, 40px, 40px, $light-color);
+            text-align: center;
+        }
+
+        & .intro__content-description {
+            @include barlow(400, 15px, 25px, $light-color);
+            opacity: 0.8;
+        }
+
+        & .intro__button {
+            display: block;
+            width:217px;
+            margin: 0 auto;
+    }
     }
 }
