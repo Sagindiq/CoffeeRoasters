@@ -424,15 +424,12 @@ footer {
     background: url(../img/intro-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
   }
   .intro__content {
-    position: absolute;
     min-width: 279px;
-    margin: 0 auto;
-    top: 100px;
-    left: 24px;
-    right: 24px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .intro__content .intro__content-title {
     font-family: 'Fraunces', serif;
@@ -458,9 +455,9 @@ footer {
     margin-right: auto;
   }
   .intro__content .intro__button {
-    display: block;
     width: 279px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
