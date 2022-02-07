@@ -31,7 +31,7 @@
     // color: #f1f0ec;
     z-index: -1;
 
-    left:19px;
+    left: 19px;
     top: 34px;
 
     font-family: 'Fraunces', serif;
@@ -42,7 +42,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: #83888F;
-    background-image:linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
 }
 
 .gran-item::before {
@@ -95,4 +95,49 @@
     line-height: 26px;
     text-align: center;
     color: #333D4B;
+}
+
+@media only screen and (max-width: $tablet) and (min-width: $mobile) {
+    .collection__container {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .collection__container-center {
+        position: relative;
+    }
+
+.collection-background-text {
+    width:686px;
+    position: absolute;
+    left: -50px;
+    @include fraunces (900, 96px, 72px, #83888F);
+    text-align: center;
+}
+
+    .collection__list-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collection__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection__list-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-repeat: no-repeat;
+        
+        justify-content: space-between;
+        width: 573px;
+        margin:0 auto;
+    }
+
+    .collection__list-item div {
+        width: 282px;
+    }
 }

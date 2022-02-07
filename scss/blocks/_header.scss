@@ -133,17 +133,17 @@
 
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:400px) {
     .header__container {
-        width: 326px;
-        margin-left: auto;
-        margin-right: auto;
+        min-width: 375px;
+        margin: 32px auto 41px auto;
         display: flex;
         justify-content: space-between;
     }
 
-    .logo-link {
-        min-width:162px;
+    .logo {
+        width:162px;
         height: 17px;
     }
 }
+

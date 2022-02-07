@@ -5,20 +5,17 @@
 .intro__container {
     background-image: url(../img/intro-bg.jpg);
     background-color: black;
-    height: 600px;
-    position: relative;
     border-radius:16px;
+    background-repeat: no-repeat;
 }
 
 .intro__content {
-    position:absolute;
     width: 493px;
-    top: 117px;
-    left: 85px;
-    bottom: 116px;
+    margin-left: 85px;
 }
 
 .intro__content-title {
+    padding-top: 117px;
     font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 900;
@@ -37,6 +34,10 @@
     line-height: 26px;
     color: rgb(254, 252, 247);
     opacity: 0.8;
+}
+
+.intro__button {
+    margin-bottom: 116px;
 }
 
 @media only screen and (max-width: $tablet) {
@@ -119,17 +120,22 @@
 
         & .intro__content-title {
             @include fraunces(900, 40px, 40px, $light-color);
-            text-align: center;
+            width:279px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         & .intro__content-description {
             @include barlow(400, 15px, 25px, $light-color);
             opacity: 0.8;
+            width:279px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         & .intro__button {
             display: block;
-            width:217px;
+            width:279px;
             margin: 0 auto;
     }
     }

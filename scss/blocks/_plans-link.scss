@@ -1,8 +1,8 @@
 .plan-button {
     background: #0E8784;
-    padding:14px 31px;
+    padding: 14px 31px;
     border-radius: 6px;
-    border:none;
+    border: none;
     font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 900;
@@ -11,4 +11,13 @@
     text-align: center;
     color: #FEFCF7;
     cursor: pointer;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #66D2CF;
+    }
+
+    &:disabled {
+        background-color: #E2DEDB;
+    }
 }
