@@ -182,6 +182,7 @@ footer {
 
 .navbar__list-item :first-child {
   margin-left: 0;
+  height: 2px;
 }
 
 .header__burger {
