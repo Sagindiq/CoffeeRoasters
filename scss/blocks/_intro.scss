@@ -55,7 +55,7 @@
     }
 }
 
-@media only screen and (max-width: $tablet) and (min-width: $mobile) {
+@media only screen and (max-width: 1024px) and (min-width: $mobile) {
     .intro {
         min-width: $mobile;
         margin: 0 auto;
@@ -63,7 +63,7 @@
     }
 
     .intro__container {
-        background: url(../img/intro-bg-tablet.jpg);
+        background-image: url(../img/intro-bg-tablet.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -377,14 +377,14 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1310px) and (min-width: 767px) {
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
   .intro {
     min-width: 767px;
     margin: 0 auto;
     padding: 0 15px;
   }
   .intro__container {
-    background: url(../img/intro-bg-tablet.jpg);
+    background-image: url(../img/intro-bg-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
