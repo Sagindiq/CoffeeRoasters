@@ -186,11 +186,12 @@ footer {
 
 .header__burger {
   display: none;
-  border: 2px solid #000;
+  border: none;
   background-color: #fff;
   padding: 8px 6px;
   width: 32px;
   height: 32px;
+  border-radius: 6px;
 }
 
 .header__burger::before, .header__burger::after, .header__burger-inner {
@@ -202,10 +203,12 @@ footer {
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
   content: '';
+  border-radius: 6px;
 }
 
 .header__burger::after {
   margin-bottom: 0;
+  height: 1.9px;
 }
 
 .header__burger--opened {
@@ -226,6 +229,7 @@ footer {
 .header__burger--opened::after {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+  height: 2px;
 }
 
 .header__burger--opened::before {
@@ -435,8 +439,41 @@ footer {
     border-radius: 16px;
   }
   .intro__content {
-    width: 85%;
-    margin-left: 30px;
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-bottom: 99px;
+  }
+  .intro__content-title {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FEFCF7;
+    min-width: 279px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .intro__content-description {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FEFCF7;
+    opacity: 0.8;
+    width: 279px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .intro__button {
+    display: block;
+    width: 279px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -465,6 +502,7 @@ footer {
     line-height: 40px;
     color: #FEFCF7;
     min-width: 279px;
+    text-align: center;
   }
   .intro__content .intro__content-description {
     font-family: 'Barlow', sans-serif;
@@ -474,7 +512,8 @@ footer {
     line-height: 25px;
     color: #FEFCF7;
     opacity: 0.8;
-    width: 85%;
+    width: 279px;
+    text-align: center;
   }
   .intro__content .intro__button {
     width: 279px;
