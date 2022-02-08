@@ -208,7 +208,7 @@ footer {
 
 .header__burger::after {
   margin-bottom: 0;
-  height: 1.9px;
+  height: 2px;
 }
 
 .header__burger--opened {
@@ -1069,6 +1069,7 @@ footer {
     position: absolute;
     bottom: -597px;
     left: 24px;
+    right: 24px;
     width: 279px;
     margin: 0 auto;
     display: -webkit-box;
