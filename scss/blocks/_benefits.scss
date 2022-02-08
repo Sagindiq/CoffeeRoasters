@@ -184,7 +184,84 @@
     .benefits__container {
         width: 327px;
         margin: 120px auto 0 auto;
-        padding: 0 15px 982px 15px;
+        padding: 0 15px 982px 0;
+        position: relative;
+    }
+
+    .benefits__info {
+        width: 279px;
+        margin:0 auto;
+    }
+
+    .benefits__info-title {
+        width: 279px;
+        text-align: center;
+    }
+
+    .benefits__info-description {
+        width: 279px;
+        text-align: center;
+    }
+
+    .benefits__list {
+        position: absolute;
+        bottom: -597px;
+        left: 24px;
+        right: 24px;
+        width: 279px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefits__list-item {
+        width: 279px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefits__list-item:first-child::before {
+        @include benefits-mobile-img;
+        background-image: url(../img/coffee.svg);
+    }
+
+    .benefits__list-item:nth-child(2)::before {
+        @include benefits-mobile-img;
+        background-image: url(../img/box.svg);
+    }
+
+    .benefits__list-item:last-child::before {
+        @include benefits-mobile-img;
+        background-image: url(../img/car.svg);
+        height: 50px;
+    }
+
+    .benefits__list-item div {
+        width: 255px;
+        margin: 0 auto 48px auto;
+    }
+
+    .item__title {
+        @include fraunces (900, 24px, 32px, $light-color);
+        text-align: center;
+        width: 255px;
+        margin: 0 auto 24px auto;
+    }
+
+    .item__description {
+        @include barlow (400, 15px, 25px, $light-color);
+        text-align: center;
+        width: 212px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .benefits__container {
+        width: 327px;
+        margin: 24px auto 0 24px;
+        padding: 0 15px 982px 0;
         position: relative;
     }
 
