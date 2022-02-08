@@ -1,8 +1,8 @@
-.intro {
+.intro__container {
     margin-top: 45px;
 }
 
-.intro__container {
+.intro__container-center {
     background-image: url(../img/intro-bg.jpg);
     background-color: black;
     border-radius:16px;
@@ -56,16 +56,17 @@
 }
 
 @media only screen and (max-width: 1024px) and (min-width: $mobile) {
-    .intro {
+    .intro__container {
         min-width: $mobile;
         margin: 0 auto;
         padding:0 15px;
     }
 
-    .intro__container {
+    .intro__container-center {
         background-image: url(../img/intro-bg-tablet.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 16px;
     }
 
     .intro__content {
@@ -89,15 +90,16 @@
 }
 
 @media only screen and (max-width: 768px){
-    .intro {
+    .intro__container {
         min-width: 98%;
         margin: 0 auto;
         padding: 0 15px;
     }
 
-    .intro__container {
+    .intro__container-center {
         background-image: url(../img/intro-bg-mobile.jpg);
         background-size: cover;
+        border-radius: 16px;
     }
 
     .intro__content {
@@ -107,16 +109,17 @@
 }
 
 @media only screen and (max-width: 480px) and (min-width: 327px) {
-    .intro {
+    .intro__container {
         min-width: 375px;
         margin: 0 auto;
         padding:0 15px;
     }
 
-    .intro__container {
+    .intro__container-center {
         background: url(../img/intro-bg-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        border-radius: 16px;
     }
 
     .intro__content {

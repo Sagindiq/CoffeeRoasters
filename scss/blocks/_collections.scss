@@ -209,3 +209,58 @@
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 365px) {
+    .collection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection__container {
+        width:98%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collection__container-center {
+        position: relative;
+        
+    }
+
+    .collection-background-text {
+        position: absolute;
+        // color: #f1f0ec;
+        z-index: -1;
+        left: 8%;
+        top: 80px;
+
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 62px;
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: #83888F;
+        background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+
+    }
+
+    .collection__list {
+        margin-top: 23px;
+    }
+
+    .collection__list-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection__item-title {
+        text-align: center;
+    }
+
+    .collection__item-description {
+        text-align: center;
+    }
+}

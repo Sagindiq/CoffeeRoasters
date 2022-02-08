@@ -1,50 +1,50 @@
 .header {
-    position: relative;
+  position: relative;
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px;
 }
 
 .navbar__list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__list-item {
-    margin-left: 33px;
+  margin-left: 33px;
 
-    & :first-child {
-        margin-left: 0;
-    }
+  & :first-child {
+    margin-left: 0;
+  }
 }
 
 .header__burger {
-      display: none;
-      border: 2px solid #000;
-      background-color: #fff;
-      padding: 8px 6px;
-      width: 32px;
-      height: 32px;
-    
-      &::before,
-      &::after,
-      &-inner {
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-        display: block;
-        margin-bottom: 3px;
-        transition: 0.2s ease all;
-        content: '';
-      }
-    
-      &::after {
-        margin-bottom: 0;
-      }
+  display: none;
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 8px 6px;
+  width: 32px;
+  height: 32px;
+
+  &::before,
+  &::after,
+  &-inner {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin-bottom: 3px;
+    transition: 0.2s ease all;
+    content: '';
+  }
+
+  &::after {
+    margin-bottom: 0;
+  }
 }
 
 .header__burger--opened {
@@ -53,7 +53,7 @@
   & .header__burger-inner {
     display: none;
   }
-  
+
   &::before,
   &::after {
     width: 16px;
@@ -61,70 +61,79 @@
     left: 50%;
     top: 50%;
   }
-  
+
   &::after {
     transform: translate(-50%, -50%) rotate(45deg);
   }
-  
+
   &::before {
     margin-bottom: 0;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
 
-@media only screen and (max-width: $tablet) {
-    .header__container {
-        width: 100%;
-        margin: 44px auto 54px auto;
-        padding:0 15px;
-    }
+@media only screen and (max-width: 1310px) {
+  .header__container {
+    max-width: 99%;
+    margin: 44px auto 54px auto;
+
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__container {
+    max-width: 96%;
+    margin: 44px auto 54px auto;
+    padding: 0 15px;
+  }
 }
 
 @media only screen and (max-width: $mobile) {
-    .header__container {
-        max-width: $mobile;
-        padding: 0 15px;
-    }
-
-    .header__burger {
-    display: block;  
+  .header__container {
+    max-width: $mobile;
+    width: 96%;
+    padding: 0 15px;
   }
 
-    .header__navbar {
-      margin-top: 30px;
-      display: none;
-      height: 560px;
-      background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-      width: 100%;
-      padding: 40px 24px;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      flex-direction: column;
-      align-items: stretch;
-      z-index: 2;
-    }
+  .header__burger {
+    display: block;
+  }
 
-    .navbar__list {
+  .header__navbar {
+    margin-top: 30px;
+    display: none;
+    height: 560px;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+    width: 100%;
+    padding: 40px 24px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 2;
+  }
+
+  .navbar__list {
     display: block;
     margin-right: 0;
     margin-bottom: 24px;
   }
 
   .navbar__list-item {
-      margin-bottom: 32px;
-      margin-right: 0;
+    margin-bottom: 32px;
+    margin-right: 0;
 
-      & a {
-          display: block;
-    @include fraunces(900, 24px, 32px, #333D4B);
-    text-align: center;
-      }
+    & a {
+      display: block;
+      @include fraunces(900, 24px, 32px, #333D4B);
+      text-align: center;
+    }
   }
 
   .navbar__list-item a:hover {
-      display: block;
-      color: #83888F;
+    display: block;
+    color: #83888F;
   }
 
   .header__navbar--opened {
@@ -134,16 +143,15 @@
 }
 
 @media only screen and (max-width:400px) {
-    .header__container {
-        min-width: 375px;
-        margin: 32px auto 41px auto;
-        display: flex;
-        justify-content: space-between;
-    }
+  .header__container {
+    min-width: 390px;
+    margin: 32px auto 41px auto;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .logo {
-        width:162px;
-        height: 17px;
-    }
+  .logo {
+    width: 162px;
+    height: 17px;
+  }
 }
-

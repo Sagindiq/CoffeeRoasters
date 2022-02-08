@@ -236,7 +236,14 @@ footer {
 
 @media only screen and (max-width: 1310px) {
   .header__container {
-    width: 100%;
+    max-width: 99%;
+    margin: 44px auto 54px auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__container {
+    max-width: 96%;
     margin: 44px auto 54px auto;
     padding: 0 15px;
   }
@@ -245,6 +252,7 @@ footer {
 @media only screen and (max-width: 767px) {
   .header__container {
     max-width: 767px;
+    width: 96%;
     padding: 0 15px;
   }
   .header__burger {
@@ -302,7 +310,7 @@ footer {
 
 @media only screen and (max-width: 400px) {
   .header__container {
-    min-width: 375px;
+    min-width: 390px;
     margin: 32px auto 41px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -317,11 +325,11 @@ footer {
   }
 }
 
-.intro {
+.intro__container {
   margin-top: 45px;
 }
 
-.intro__container {
+.intro__container-center {
   background-image: url(../img/intro-bg.jpg);
   background-color: black;
   border-radius: 16px;
@@ -378,15 +386,16 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
-  .intro {
+  .intro__container {
     min-width: 767px;
     margin: 0 auto;
     padding: 0 15px;
   }
-  .intro__container {
+  .intro__container-center {
     background-image: url(../img/intro-bg-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 16px;
   }
   .intro__content {
     max-width: 40.63%;
@@ -415,14 +424,15 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .intro {
+  .intro__container {
     min-width: 98%;
     margin: 0 auto;
     padding: 0 15px;
   }
-  .intro__container {
+  .intro__container-center {
     background-image: url(../img/intro-bg-mobile.jpg);
     background-size: cover;
+    border-radius: 16px;
   }
   .intro__content {
     width: 85%;
@@ -431,15 +441,16 @@ footer {
 }
 
 @media only screen and (max-width: 480px) and (min-width: 327px) {
-  .intro {
+  .intro__container {
     min-width: 375px;
     margin: 0 auto;
     padding: 0 15px;
   }
-  .intro__container {
+  .intro__container-center {
     background: url(../img/intro-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 16px;
   }
   .intro__content {
     min-width: 85%;
@@ -682,6 +693,65 @@ footer {
     font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #83888F;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 252, 247, 0.0001)), to(#FEFCF7));
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+  }
+  .collection__list {
+    margin-top: 23px;
+  }
+  .collection__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__item-title {
+    text-align: center;
+  }
+  .collection__item-description {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__container {
+    width: 98%;
+    margin-left: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .collection__container-center {
+    position: relative;
+  }
+  .collection-background-text {
+    position: absolute;
+    z-index: -1;
+    left: 8%;
+    top: 80px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 30px;
     line-height: 62px;
     text-align: center;
     -webkit-background-clip: text;
