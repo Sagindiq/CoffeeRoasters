@@ -526,12 +526,20 @@ footer {
 
 .gran-item::before {
   margin-top: 116px;
+  display: inline-block;
+  width: 255px;
+  height: 193px;
+  content: '';
   background: url(../img/gran-espresso.png);
   background-size: contain;
 }
 
 .planalto-item::before {
   margin-top: 116px;
+  display: inline-block;
+  width: 255px;
+  height: 193px;
+  content: '';
   background: url(../img/planalto.png);
   width: 256px;
   background-size: contain;
@@ -539,12 +547,20 @@ footer {
 
 .piccollo-item::before {
   margin-top: 116px;
+  display: inline-block;
+  width: 255px;
+  height: 193px;
+  content: '';
   background: url(../img/picollo.png);
   width: 256px;
 }
 
 .danche-item::before {
   margin-top: 116px;
+  display: inline-block;
+  width: 255px;
+  height: 193px;
+  content: '';
   background: url(../img/danche.png);
   width: 234px;
   height: 177px;
@@ -572,10 +588,13 @@ footer {
   color: #333D4B;
 }
 
-@media only screen and (max-width: 1310px) and (min-width: 480px) {
+@media only screen and (max-width: 1310px) {
   .collection__container {
-    width: 95%;
+    width: 88%;
     margin: 0 auto;
+    position: relative;
+  }
+  .collection__container-center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,32 +602,23 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .collection__container-center {
-    position: relative;
-  }
   .collection-background-text {
-    width: 95%;
     position: absolute;
-    left: 0px;
+    z-index: -1;
+    left: 15%;
     top: 80px;
     font-family: 'Fraunces', serif;
-    font-style: normal;
     font-weight: 900;
-    font-size: 96px;
-    line-height: 72px;
-    color: #83888F;
+    font-size: 70px;
+    line-height: 62px;
     text-align: center;
-  }
-  .collection__list-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #83888F;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 252, 247, 0.0001)), to(#FEFCF7));
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
   }
   .collection__list {
-    width: 95%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -632,70 +642,72 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 83%;
+    width: 88%;
     margin: 0 auto;
   }
+  .collection__list-item::before {
+    max-width: 255px;
+    background-repeat: no-repeat;
+  }
   .collection__list-item div {
-    width: 40%;
+    width: 70%;
   }
   .collection__item-title {
-    font-family: 'Fraunces', serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: #333D4B;
-    margin-bottom: 24px;
-    margin-top: 71.55px;
+    text-align: left;
   }
   .collection__item-description {
-    font-family: 'Barlow', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    color: #333D4B;
+    text-align: left;
   }
 }
 
-.gran-item::before {
-  margin-top: 116px;
-  display: inline-block;
-  width: 255px;
-  height: 193px;
-  content: '';
-  background: url(../img/gran-espresso.png);
-  background-size: contain;
-}
-
-.planalto-item::before {
-  margin-top: 116px;
-  display: inline-block;
-  width: 255px;
-  height: 193px;
-  content: '';
-  background: url(../img/planalto.png);
-  width: 256px;
-  background-size: contain;
-}
-
-.piccollo-item::before {
-  margin-top: 116px;
-  display: inline-block;
-  width: 255px;
-  height: 193px;
-  content: '';
-  background: url(../img/picollo.png);
-  width: 256px;
-}
-
-.danche-item::before {
-  margin-top: 116px;
-  background: url(../img/danche.png);
-  width: 234px;
-  height: 177px;
+@media only screen and (max-width: 700px) {
+  .collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__container {
+    position: relative;
+  }
+  .collection-background-text {
+    position: absolute;
+    z-index: -1;
+    left: 1%;
+    right: 1%;
+    top: 80px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #83888F;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 252, 247, 0.0001)), to(#FEFCF7));
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+  }
+  .collection__list {
+    margin-top: 23px;
+  }
+  .collection__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__item-title {
+    text-align: center;
+  }
+  .collection__item-description {
+    text-align: center;
+  }
 }
 
 .benefits__container {
