@@ -314,7 +314,7 @@ footer {
 
 @media only screen and (max-width: 400px) {
   .header__container {
-    min-width: 390px;
+    min-width: 385px;
     margin: 32px auto 41px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -479,8 +479,9 @@ footer {
 
 @media only screen and (max-width: 480px) and (min-width: 327px) {
   .intro__container {
-    min-width: 100%;
-    margin: 0 auto;
+    min-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 15px;
   }
   .intro__container-center {
@@ -491,7 +492,7 @@ footer {
   }
   .intro__content {
     min-width: 85%;
-    margin-left: a;
+    margin-left: auto;
     margin-right: auto;
   }
   .intro__content .intro__content-title {
