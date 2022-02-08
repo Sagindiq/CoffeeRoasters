@@ -13,6 +13,22 @@
     content: '';
 }
 
+@mixin benefits-tablet-img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 62px 0 62px 70px;
+    content: '';
+}
+
+@mixin benefits-mobile-img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 72px auto 56px auto;
+    content: '';
+}
+
 @mixin fraunces($fw, $fz, $lh, $color) {
     font-family: 'Fraunces', serif;
     font-style: normal;

@@ -933,6 +933,213 @@ footer {
   margin: 0 48px 48px 48px;
 }
 
+@media only screen and (max-width: 1310px) {
+  .benefits__container {
+    width: 689px;
+    margin: 0 auto;
+    padding: 0;
+    padding: 0 15px;
+    position: relative;
+  }
+  .benefits__info {
+    display: block;
+    margin: 0;
+    width: 540px;
+    margin: 68px auto 0 auto;
+  }
+  .benefits__info-title {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FEFCF7;
+  }
+  .benefits__info-description {
+    display: block;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FEFCF7;
+    opacity: 0.8;
+  }
+  .benefits__list {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    bottom: -375px;
+    left: 8.28%;
+    right: 8.28%;
+    width: 573px;
+  }
+  .benefits__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px;
+    width: 573px;
+  }
+  .benefits__list-item:first-child::before {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 62px 0 62px 70px;
+    content: '';
+    background-image: url(../img/coffee-tablet.svg);
+  }
+  .benefits__list-item:nth-child(2)::before {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 62px 0 62px 70px;
+    content: '';
+    background-image: url(../img/box-tablet.svg);
+  }
+  .benefits__list-item:last-child::before {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 62px 0 62px 70px;
+    content: '';
+    background-image: url(../img/car-tablet.svg);
+    background-repeat: no-repeat;
+  }
+  .benefits__list-item div {
+    width: 344px;
+    margin: 41px 0 41px 55px;
+  }
+  .item__title {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FEFCF7;
+    margin: 0 auto 16px auto;
+    text-align: left;
+  }
+  .item__description {
+    display: block;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FEFCF7;
+    text-align: left;
+    width: 344px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .benefits__container {
+    width: 327px;
+    margin: 120px auto 0 auto;
+    padding: 0 15px 982px 15px;
+    position: relative;
+  }
+  .benefits__info {
+    width: 279px;
+    margin: 0 auto;
+  }
+  .benefits__info-title {
+    width: 279px;
+    text-align: center;
+  }
+  .benefits__info-description {
+    width: 279px;
+    text-align: center;
+  }
+  .benefits__list {
+    position: absolute;
+    bottom: -597px;
+    width: 279px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits__list-item {
+    width: 279px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits__list-item:first-child::before {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 72px auto 56px auto;
+    content: '';
+    background-image: url(../img/coffee.svg);
+  }
+  .benefits__list-item:nth-child(2)::before {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 72px auto 56px auto;
+    content: '';
+    background-image: url(../img/box.svg);
+  }
+  .benefits__list-item:last-child::before {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 72px auto 56px auto;
+    content: '';
+    background-image: url(../img/car.svg);
+    height: 50px;
+  }
+  .benefits__list-item div {
+    width: 255px;
+    margin: 0 auto 48px auto;
+  }
+  .item__title {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FEFCF7;
+    text-align: center;
+    width: 255px;
+    margin: 0 auto 24px auto;
+  }
+  .item__description {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FEFCF7;
+    text-align: center;
+    width: 212px;
+    margin: 0 auto;
+  }
+}
+
 .workstep {
   margin-top: 351px;
 }
