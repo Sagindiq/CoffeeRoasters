@@ -1342,6 +1342,12 @@ footer {
   margin-top: 79px;
 }
 
+@media only screen and (max-width: 1310px) {
+  .workstep__container {
+    display: none;
+  }
+}
+
 .plan-button {
   background: #0E8784;
   padding: 14px 31px;
@@ -1497,6 +1503,12 @@ footer {
   background: url(../img/instagram-hover.svg);
   background-repeat: no-repeat;
   content: '';
+}
+
+@media only screen and (max-width: 1310px) {
+  .footer__container {
+    display: none;
+  }
 }
 
 .about-intro {

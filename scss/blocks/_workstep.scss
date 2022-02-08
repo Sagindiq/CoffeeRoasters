@@ -85,3 +85,9 @@
 .workstep__button {
     margin-top: 79px;
 }
+
+@media only screen and (max-width: $tablet) {
+    .workstep__container {
+        display: none;
+    }
+}

@@ -131,3 +131,8 @@
 
 
 
+@media Only screen and (max-width: $tablet) {
+    .footer__container {
+        display: none;
+    }
+}
